@@ -36,6 +36,8 @@
   --stress-bg: #E1F5EE;
   --shift-accent: #1d5fa8;
   --shift-bg: #E7EFFA;
+  --dash-accent: #1E2238;
+  --dash-bg: #E7E8ED;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -51,6 +53,8 @@
     --stress-bg: #085041;
     --shift-accent: #7DAEEA;
     --shift-bg: #0F2C4C;
+    --dash-accent: #B4B8CC;
+    --dash-bg: #2A2F4A;
   }
 }
 * { box-sizing: border-box; }
@@ -97,6 +101,7 @@ body {
 .tool-card:hover { transform: translateY(-1px); }
 .tool-card.stress { --accent: var(--stress-accent); }
 .tool-card.shift { --accent: var(--shift-accent); }
+.tool-card.dash { --accent: var(--dash-accent); }
 .tool-card .kicker { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); font-weight: 600; }
 .tool-card h2 { font-size: 19px; font-weight: 500; margin: 6px 0 8px; }
 .tool-card p { font-size: 13px; color: var(--text-secondary); margin: 0 0 10px; line-height: 1.55; }
@@ -201,6 +206,17 @@ body.ldh-locked > .container { display: none; }
         <li>Surgery &middot; Sick &amp; Injured &middot; Processing</li>
       </ul>
       <div class="meta">julianaxue-35.github.io/ldh-shift-tools</div>
+      <span class="go">Open</span>
+    </a>
+
+    <a class="tool-card dash" href="https://julianaxue-35.github.io/ldh-shift-ops/">
+      <div class="kicker">Live &amp; shared</div>
+      <h2>Shift Ops Dashboard</h2>
+      <p>Real-time shared view of flagged cases, shift progress, and disease surveillance — separate sign-in, not the access code below.</p>
+      <ul>
+        <li>Cases flagged &middot; Pick up &middot; Disease surveillance export</li>
+      </ul>
+      <div class="meta">julianaxue-35.github.io/ldh-shift-ops</div>
       <span class="go">Open</span>
     </a>
   </div>
